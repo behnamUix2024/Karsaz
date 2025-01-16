@@ -9,7 +9,7 @@
     tools:context=".ui.activity.SplashActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_profile"
         android:layout_width="300dp"
         android:layout_height="280dp"
         android:layout_marginTop="45dp"
