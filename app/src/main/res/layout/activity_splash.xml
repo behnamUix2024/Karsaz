@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".SplashActivity">
+    tools:context=".ui.activity.SplashActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="280dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
         android:id="@+id/splash_btn_welcome"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="45dp"
         android:layout_marginBottom="42dp"
         android:background="@drawable/bg_button_splash"
         android:elevation="8dp"

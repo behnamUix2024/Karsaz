@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h1">32.44dp</dimen>
+    <dimen name="h2">28.83px</dimen>
+    <dimen name="h3">25.63px</dimen>
+    <dimen name="h4">22.78px</dimen>
+    <dimen name="h5">20.25px</dimen>
+    <dimen name="h6">18dp</dimen>
+    <dimen name="p">16dp</dimen>
+    <dimen name="caption">14.22dp</dimen>
+    <dimen name="small">12.64px</dimen>
+    <dimen name="radius">8dp</dimen>
+    <dimen name="elevation">6dp</dimen>
+</resources>

@@ -1,15 +1,10 @@
-package com.behnamuix.karsaz
+package com.behnamuix.karsaz.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.view.LayoutInflater
 import android.view.WindowManager
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.behnamuix.karsaz.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
@@ -24,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         binding.splashBtnWelcome.setOnClickListener(){
-            val intent=Intent(this@SplashActivity,MainActivity::class.java)
+            val intent=Intent(this@SplashActivity, MainActivity::class.java)
             startActivity(intent)
         }
 
