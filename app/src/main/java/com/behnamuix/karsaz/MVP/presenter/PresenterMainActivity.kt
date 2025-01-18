@@ -7,8 +7,12 @@ import com.behnamuix.karsaz.MVP.view.ViewMainActivity
 class PresenterMainActivity(
     private val view: ViewMainActivity,
     private val model: ModelMainActivity
-) :BaseLifeCycle{
+) : BaseLifeCycle {
     override fun onCreate() {
+        showProfile()
+    }
 
+    fun showProfile() {
+        view.loadProfile()
     }
 }
