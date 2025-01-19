@@ -6,9 +6,11 @@ import com.behnamuix.karsaz.MVP.model.ModelMainActivity
 import com.behnamuix.karsaz.MVP.presenter.PresenterMainActivity
 import com.behnamuix.karsaz.MVP.view.ViewMainActivity
 import com.behnamuix.karsaz.R
+import com.behnamuix.karsaz.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var presenter: PresenterMainActivity
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val view=ViewMainActivity(this)
