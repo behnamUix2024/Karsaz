@@ -1,5 +1,6 @@
 [versions]
 agp = "8.5.2"
+calendarview = "0.3.2"
 circularimageview = "1.0.2"
 glide = " 4.16.0'"
 glideVersion = "4.16.0"
@@ -18,9 +19,11 @@ constraintlayout = "2.2.0"
 persiandatepicker = "1.1.4"
 persianMaterialDatepicker = "1.0.1"
 picasso = "2.8"
+singleRowCalednar = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+calendarview = { module = "com.github.sma6871:CalendarView", version.ref = "calendarview" }
 circularimageview = { module = "com.github.AtifSayings:CircularImageView", version.ref = "circularimageview" }
 
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
@@ -44,6 +47,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 persian-material-datepicker = { module = "com.github.M-Erfan-Dm:persian-material-datepicker", version.ref = "persianMaterialDatepicker" }
 persiandatepicker = { module = "com.github.javaherisaber:PersianDatePicker", version.ref = "persiandatepicker" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+single-row-calednar = { module = "com.michalsvec:single-row-calednar", version.ref = "singleRowCalednar" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

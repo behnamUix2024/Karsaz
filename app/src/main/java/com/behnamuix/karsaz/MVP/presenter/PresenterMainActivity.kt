@@ -10,9 +10,13 @@ class PresenterMainActivity(
 ) : BaseLifeCycle {
     override fun onCreate() {
         showProfile()
+        showCalander()
     }
 
     fun showProfile() {
         view.loadProfile()
+    }
+    fun showCalander(){
+        view.loadCalanderRow()
     }
 }
