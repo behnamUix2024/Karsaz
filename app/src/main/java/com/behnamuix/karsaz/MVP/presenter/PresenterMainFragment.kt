@@ -1,12 +1,12 @@
 package com.behnamuix.karsaz.MVP.presenter
 
 import com.behnamuix.karsaz.MVP.ext.BaseLifeCycle
-import com.behnamuix.karsaz.MVP.model.ModelMainActivity
-import com.behnamuix.karsaz.MVP.view.ViewMainActivity
+import com.behnamuix.karsaz.MVP.model.ModelMainFragment
+import com.behnamuix.karsaz.MVP.view.ViewMainFragment
 
-class PresenterMainActivity(
-    private val view: ViewMainActivity,
-    private val model: ModelMainActivity
+class PresenterMainFragment(
+    private val view: ViewMainFragment,
+    private val model: ModelMainFragment
 ) : BaseLifeCycle {
     override fun onCreate() {
         showProfile()
@@ -17,6 +17,6 @@ class PresenterMainActivity(
         view.loadProfile()
     }
     fun showCalander(){
-        view.loadCalanderRow()
+        view.loadCalendarWeek()
     }
 }

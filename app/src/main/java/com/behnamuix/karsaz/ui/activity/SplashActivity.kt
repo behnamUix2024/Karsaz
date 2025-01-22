@@ -6,7 +6,9 @@ import android.view.WindowManager
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.behnamuix.karsaz.databinding.ActivitySplashBinding
+import com.google.android.material.internal.ContextUtils.getActivity
 
+@Suppress("DEPRECATION")
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +21,9 @@ class SplashActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         binding.splashBtnWelcome.setOnClickListener(){
-            val intent=Intent(this@SplashActivity, MainActivity::class.java)
+            val intent=Intent(this, MainActivity::class.java)
             startActivity(intent)
+
         }
 
     }

@@ -1,6 +1,7 @@
 package com.behnamuix.karsaz.MVP.model
 
+import android.app.Activity
 import com.behnamuix.karsaz.ui.activity.MainActivity
 
-class ModelMainActivity(val actvity: MainActivity) {
+class ModelMainFragment(val activity: Activity) {
 }

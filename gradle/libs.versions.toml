@@ -20,6 +20,9 @@ persiandatepicker = "1.1.4"
 persianMaterialDatepicker = "1.0.1"
 picasso = "2.8"
 singleRowCalednar = "1.0.0"
+threetenabp = "1.4.8"
+navigationFragmentKtx = "2.8.5"
+navigationUiKtx = "2.8.5"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -48,6 +51,9 @@ persian-material-datepicker = { module = "com.github.M-Erfan-Dm:persian-material
 persiandatepicker = { module = "com.github.javaherisaber:PersianDatePicker", version.ref = "persiandatepicker" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
 single-row-calednar = { module = "com.michalsvec:single-row-calednar", version.ref = "singleRowCalednar" }
+threetenabp = { module = "com.jakewharton.threetenabp:threetenabp", version.ref = "threetenabp" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
