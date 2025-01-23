@@ -1,5 +1,6 @@
 [versions]
 agp = "8.5.2"
+androidhorizontalcalendar = "v0.1.4"
 calendarview = "0.3.2"
 circularimageview = "1.0.2"
 glide = " 4.16.0'"
@@ -17,14 +18,17 @@ material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.2.0"
 persiandatepicker = "1.1.4"
+persianDatePickerDialog = "1.8.0"
 persianMaterialDatepicker = "1.0.1"
 picasso = "2.8"
 singleRowCalednar = "1.0.0"
 threetenabp = "1.4.8"
 navigationFragmentKtx = "2.8.5"
 navigationUiKtx = "2.8.5"
+weekcalendar = "1.0.6"
 
 [libraries]
+androidhorizontalcalendar = { module = "com.github.afreakyelf:AndroidHorizontalCalendar", version.ref = "androidhorizontalcalendar" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 calendarview = { module = "com.github.sma6871:CalendarView", version.ref = "calendarview" }
 circularimageview = { module = "com.github.AtifSayings:CircularImageView", version.ref = "circularimageview" }
@@ -47,6 +51,7 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+persian-date-picker-dialog = { module = "com.github.aliab:Persian-Date-Picker-Dialog", version.ref = "persianDatePickerDialog" }
 persian-material-datepicker = { module = "com.github.M-Erfan-Dm:persian-material-datepicker", version.ref = "persianMaterialDatepicker" }
 persiandatepicker = { module = "com.github.javaherisaber:PersianDatePicker", version.ref = "persiandatepicker" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
@@ -54,6 +59,7 @@ single-row-calednar = { module = "com.michalsvec:single-row-calednar", version.r
 threetenabp = { module = "com.jakewharton.threetenabp:threetenabp", version.ref = "threetenabp" }
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+weekcalendar = { module = "noman.weekcalendar:weekcalendar", version.ref = "weekcalendar" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

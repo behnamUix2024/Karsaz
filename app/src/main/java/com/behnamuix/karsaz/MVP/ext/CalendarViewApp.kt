@@ -1,0 +1,11 @@
+package com.behnamuix.karsaz.MVP.ext
+
+import android.app.Application
+import com.jakewharton.threetenabp.AndroidThreeTen
+
+class CalendarViewApp:Application() {
+    override fun onCreate() {
+        super.onCreate()
+        AndroidThreeTen.init(this)
+    }
+}

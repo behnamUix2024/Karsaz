@@ -77,8 +77,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.circularimageview)
     implementation(libs.glide)
-    implementation (libs.calendarview)
+
     implementation (libs.threetenabp)
+    implementation (libs.persian.date.picker.dialog)
 
 
 
