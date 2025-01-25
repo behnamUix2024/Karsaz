@@ -21,7 +21,7 @@ class ViewMainActivity(
     context: Context
 ) : FrameLayout(context) {
     val binding = ActivityMainBinding.inflate(LayoutInflater.from(context))
-var picker=PersianDatePickerDialog(context)
+
     private val selectedDates = mutableSetOf<LocalDate>()
     fun loadProfile() {
 
@@ -39,6 +39,7 @@ var picker=PersianDatePickerDialog(context)
     }
     fun loadCalendarWeek(){
 
+        val picker = PersianDatePickerDialog(context)
         picker.setPositiveButtonString("باشه")
             .setNegativeButton("بیخیال")
             .setTodayButton("امروز")
