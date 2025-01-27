@@ -17,6 +17,6 @@ class PresenterMainActivity(
         view.loadProfile()
     }
     fun showCalander(){
-        view.loadCalendarWeek()
+        view.loadCalendar()
     }
 }
