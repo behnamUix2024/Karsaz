@@ -72,7 +72,7 @@
                     android:elevation="6dp"
                     android:gravity="center"
                     android:inputType="phone"
-                    android:maxLength="12"
+                    android:maxLength="13"
                     android:textColor="@color/color_prim1"
                     android:textColorHint="@color/color_acc2" />
 
