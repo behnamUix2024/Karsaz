@@ -14,9 +14,9 @@ class PresenterMainActivity(
     }
 
     fun showProfile() {
-        view.loadProfile()
+
     }
     fun showCalander(){
-        view.loadCalendar()
+
     }
 }

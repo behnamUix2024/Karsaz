@@ -1,13 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
     namespace = "com.behnamuix.karsaz"
     compileSdk = 35
     buildFeatures {
-        viewBinding=true
+        viewBinding = true
     }
 
     defaultConfig {
@@ -68,6 +69,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -78,11 +80,10 @@ dependencies {
     implementation(libs.circularimageview)
     implementation(libs.glide)
 
-    implementation (libs.threetenabp)
-    implementation (libs.persian.date.picker.dialog)
-    //implementation(libs.github.process.button)
-    //implementation (libs.multisearchview)
-
+    implementation(libs.persian.date.picker.dialog)
+    implementation(libs.animate)
+    implementation(libs.lottie)
+    implementation("com.google.firebase:firebase-auth-ktx:21.0.1")
 
 
 

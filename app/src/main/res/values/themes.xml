@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.KarSaz" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="numberPickerTheme">@style/customNumberPicker</item>
+    <style name="Theme.Karsaz" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/color_prim1</item>
+        <item name="android:navigationBarColor">@color/color_prim1</item>
+        <item name="fontFamily">@font/vazir_fd_wol</item>
     </style>
-    <style name="customNumberPicker">
-        <!-- use this for text color -->
-        <item name="android:textColorPrimary">@android:color/holo_green_dark</item>
+    <style name="BottomSheetDialogTheme" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowAnimationStyle">@style/BottomSheetAnimation</item>
+    </style>
 
-        <!-- use this for divider color -->
-        <item name="colorControlNormal">@android:color/holo_purple</item>
-        <item name="fontFamily">@font/vazir_medium</item>
-        <item name="android:textSize">@dimen/h1</item>
+    <style name="BottomSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
 </resources>

@@ -1,12 +1,11 @@
 <resources>
+    <!-- Intro -->
     <string name="app_name">KarSaz</string>
     <string name="splash_title">کارساز</string>
     <string name="splash_body">مدیریت سریع تر کارها</string>
     <string name="splash_ver">1.0.0</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="my_task">وظیفه جدید</string>
-    <string name="today_date">شنبه 22 دی ماه</string>
-    <string name="date_input_lbl">تاریخ را وارد کنید</string>
-    <string name="lbl_info_date">جستجو وظیفه مورد نظر بر اساس تاریخ</string>
 </resources>

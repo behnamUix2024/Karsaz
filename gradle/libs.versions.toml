@@ -16,6 +16,7 @@ activityCompose = "1.9.3"
 composeBom = "2024.04.01"
 appcompat = "1.7.0"
 material = "1.12.0"
+lottie = "6.6.2"
 activity = "1.9.3"
 constraintlayout = "2.2.0"
 multisearchview = "0.3"
@@ -23,11 +24,14 @@ persiandatepicker = "1.1.4"
 persianDatePickerDialog = "1.8.0"
 persianMaterialDatepicker = "1.0.1"
 picasso = "2.8"
+animate="1.0.1"
 singleRowCalednar = "1.0.0"
 threetenabp = "1.4.8"
 navigationFragmentKtx = "2.8.5"
 navigationUiKtx = "2.8.5"
 weekcalendar = "1.0.6"
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.2.0"
 
 [libraries]
 androidhorizontalcalendar = { module = "com.github.afreakyelf:AndroidHorizontalCalendar", version.ref = "androidhorizontalcalendar" }
@@ -59,13 +63,17 @@ persian-date-picker-dialog = { module = "com.github.aliab:Persian-Date-Picker-Di
 persian-material-datepicker = { module = "com.github.M-Erfan-Dm:persian-material-datepicker", version.ref = "persianMaterialDatepicker" }
 persiandatepicker = { module = "com.github.javaherisaber:PersianDatePicker", version.ref = "persiandatepicker" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+animate = { module = "com.github.gayanvoice:android-animations-kotlin", version.ref = "animate" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 single-row-calednar = { module = "com.michalsvec:single-row-calednar", version.ref = "singleRowCalednar" }
 threetenabp = { module = "com.jakewharton.threetenabp:threetenabp", version.ref = "threetenabp" }
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 weekcalendar = { module = "noman.weekcalendar:weekcalendar", version.ref = "weekcalendar" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 

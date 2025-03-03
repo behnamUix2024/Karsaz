@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "623712096199",
+    "project_id": "behnamuix-karsaz",
+    "storage_bucket": "behnamuix-karsaz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623712096199:android:23981f52bd3c7781eb93e2",
+        "android_client_info": {
+          "package_name": "com.behnamuix.karsaz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClI2BZOuLLBHSnOhICj-XXPAJWJ6LLAbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
