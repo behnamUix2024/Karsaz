@@ -15,4 +15,8 @@
     <color name="color_acc1">#D95639</color>
     <color name="color_acc2">#383CD5</color>
 
+    <color name="color_background_box">@color/color_background_box_stroke</color>
+    <color name="color_background_box_stroke">#DEDEDE</color>
+    <color name="color_background_box_stroke_active">#A5A5A5</color>
+
 </resources>
