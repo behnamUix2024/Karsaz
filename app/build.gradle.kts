@@ -78,7 +78,7 @@ dependencies {
     implementation(libs.lottie)
     implementation(libs.volley)
     implementation(libs.otp.view)
-    implementation(libs.blurview)
+    implementation (libs.switch.button)
 
 
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_color1"
     android:elevation="6dp"
-    tools:context=".ui.fragments.LoginFragment">
+    tools:context=".ui.fragments.splash.LoginSplashFragment">
 
     <TextView
         android:id="@+id/textView2"
@@ -16,7 +16,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/vazir_fd_wol"
-        android:text="صفحه ثبت نام"
+        android:text="@string/str_tv_title_login"
         android:textColor="@color/color_sec1"
         android:textSize="@dimen/h6"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,26 +44,29 @@
         android:id="@+id/btn_signup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="@color/color_acc2"
         android:fontFamily="@font/vazir_medium"
         android:padding="10dp"
-        android:text="ثبت نام / ورورد"
+        android:text="@string/str_btn_login"
         android:textColor="@color/color_sec1"
         android:textSize="@dimen/h6"
         app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/img_login"
         app:layout_constraintStart_toStartOf="@+id/img_login"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:alpha="0.8"
         android:fontFamily="@font/vazir_fd_wol"
         android:gravity="center"
-        android:text="با ثبت نام کردن در کارساز به قابلیت های زیادی دسترسی پیدا میکنید"
+        android:text="@string/str_tv_body_login"
         android:textColor="@color/color_sec1"
         android:textSize="@dimen/body"
         app:layout_constraintBottom_toBottomOf="parent"

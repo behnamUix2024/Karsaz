@@ -29,6 +29,7 @@ picasso = "2.8"
 animate="1.0.1"
 playServicesAuthApiPhone = "19.2.0"
 singleRowCalednar = "1.0.0"
+switchButton = "0.0.3"
 threetenabp = "1.4.8"
 navigationFragmentKtx = "2.8.5"
 navigationUiKtx = "2.8.5"
@@ -66,6 +67,7 @@ animate = { module = "com.github.gayanvoice:android-animations-kotlin", version.
 lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 play-services-auth-api-phone = { module = "com.google.android.gms:play-services-auth-api-phone", version.ref = "playServicesAuthApiPhone" }
 single-row-calednar = { module = "com.michalsvec:single-row-calednar", version.ref = "singleRowCalednar" }
+switch-button = { module = "com.github.zcweng:switch-button", version.ref = "switchButton" }
 threetenabp = { module = "com.jakewharton.threetenabp:threetenabp", version.ref = "threetenabp" }
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }

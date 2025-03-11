@@ -1,33 +1,26 @@
-package com.behnamuix.karsaz.ui.fragments
+package com.behnamuix.karsaz.ui.fragments.splash
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowInsetsController
-import android.view.WindowManager
-import android.widget.Toast
-import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 
 import com.behnamuix.karsaz.R
 import com.behnamuix.karsaz.databinding.FragmentSplashBinding
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import render.animations.Bounce
-import render.animations.Flip
 import render.animations.Render
 
-class SplashFragment : Fragment() {
+class IntroSplashFragment : Fragment() {
     private lateinit var sharedPreferences: SharedPreferences
     private val SPLASH_TIME_OUT = 1
     private var loopJob: Job? = null
@@ -101,7 +94,8 @@ class SplashFragment : Fragment() {
 
     private fun loadLoginFrag() {
         val navController = findNavController()
-        navController.navigate(R.id.action_splashFragment_to_loginFragment) // action_home_to_profile شناسه Action است.
+        //navController.navigate(R.id.action_splashFragment_to_loginFragment) // action_home_to_profile شناسه Action است.
+        navController.navigate(R.id.action_splashFragment_to_homeFragment) // action_home_to_profile شناسه Action است.
 
     }
 

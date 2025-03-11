@@ -1,52 +1,39 @@
-package com.behnamuix.karsaz.ui.fragments
+package com.behnamuix.karsaz.ui.fragments.splash
 
-import android.content.Context
-import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
-import android.renderscript.Allocation
-import android.renderscript.Element
-import android.renderscript.RenderScript
-import android.renderscript.ScriptIntrinsicBlur
 import android.util.Log
 
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
 
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
-import androidx.core.view.drawToBitmap
+import androidx.navigation.fragment.findNavController
 import com.behnamuix.karsaz.R
-import com.behnamuix.karsaz.databinding.FragmentEndBinding
+import com.behnamuix.karsaz.databinding.FragmentLastBinding
 import com.bumptech.glide.Glide
 import com.google.android.material.button.MaterialButton
-import com.google.android.material.card.MaterialCardView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 
 class LastSplashFragment : Fragment() {
 
-    private var _binding: FragmentEndBinding? = null
+    private var _binding: FragmentLastBinding? = null // اصلاح نوع و مقداردهی اولیه
     private val binding get() = _binding!!
 
     private val url = "https://behnamuix2024.com/img/karsaz/end/end_splash.png"
     private lateinit var imgEndSplash: ImageView
     private var dialog: AlertDialog? = null
     private var btnNameOk: MaterialButton? = null
+    private var btnEnd: MaterialButton? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentEndBinding.inflate(inflater, container, false)
+        _binding = FragmentLastBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -59,14 +46,20 @@ class LastSplashFragment : Fragment() {
     }
 
     private fun config() {
-        imgEndSplash=binding.imgEnd
+        if (_binding != null) { // بررسی null بودن _binding
+            imgEndSplash = binding.imgEnd // اصلاح نام view
+            btnEnd = binding.btnEnd
+            btnEnd?.setOnClickListener {
+                loadHomeFragment()
+            }
+        }
     }
 
 
     private fun setupDialog() {
         if (!isAdded) return
         val builder = MaterialAlertDialogBuilder(requireContext()).apply {
-            setView(R.layout.end_frag_dialog)
+            setView(R.layout.dialog_last_frag_dialog)
             setCancelable(true)
         }
         dialog = builder.create()
@@ -99,7 +92,12 @@ class LastSplashFragment : Fragment() {
             .into(imgEndSplash)
     }
 
+    private fun loadHomeFragment() {
+        Log.i("testing", "loadHomeFragment()")
+        val navController = findNavController()
+        navController.navigate(R.id.action_endFragment_to_homeFragment) // action_home_to_profile شناسه Action است.
 
+    }
 
 
 

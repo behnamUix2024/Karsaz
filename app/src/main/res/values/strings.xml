@@ -6,7 +6,25 @@
     <string name="splash_ver">1.0.0</string>
 
 
+    <string name="str_tv_title_login">صفحه ثبت نام</string>
+    <string name="str_tv_body_login">با ثبت نام کردن در کارساز به قابلیت های زیادی دسترسی پیدا میکنید</string>
+    <string name="str_btn_login">ثبت نام / ورورد</string>
 
+
+    <string name="str_dg_title_login">برای ثبت نام لطفا شماره تلفن خود را وارد کنید</string>
+    <string name="str_dg_et_hint_login">شماره تلفن</string>
+    <string name="str_dg_btn_login">ارسال کد</string>
+
+    <string name="str_dg_title_end">لطفا در کادر زیر نام خود را به فارسی وارد کنید:</string>
+    <string name="str_dg_et_hint_end">نام خود را وارد کنید</string>
+    <string name="str_dg_btn_end">تایید</string>
+
+
+    <string name="str_tv_title_end">صفحه پایانی</string>
+    <string name="str_tv_body_end">کاربر گرامی تمام مراحل ثبت نام انجام شد و میتواید با فشار دادن دکمه زیر وارد صفحه اصلی شوید</string>
+    <string name="str_btn_end">ثبت نام انجام شد</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_block_net">کاربر عزیز اینترنت شما متصل نیست لطفا بعد از پیگیری های لازم بر روی دکمه زیر کلیک کنید</string>
+    <string name="str_btn_block">تلاش مجدد</string>
 </resources>

@@ -15,6 +15,12 @@
     <color name="color_acc1">#D95639</color>
     <color name="color_acc2">#383CD5</color>
 
+
+    <color name="color_error">#F44336</color>
+    <color name="color_block">#4399E2</color>
+    <color name="color_bg_main">#EEEEEE</color>
+
+
     <color name="color_background_box">@color/color_background_box_stroke</color>
     <color name="color_background_box_stroke">#DEDEDE</color>
     <color name="color_background_box_stroke_active">#A5A5A5</color>

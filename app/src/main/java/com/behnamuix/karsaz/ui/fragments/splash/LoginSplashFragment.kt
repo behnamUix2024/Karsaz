@@ -1,10 +1,6 @@
-package com.behnamuix.karsaz.ui.fragments
+package com.behnamuix.karsaz.ui.fragments.splash
 
 import com.behnamuix.karsaz.Timer.MyTimer
-import android.content.BroadcastReceiver
-import android.content.Context
-import android.content.Intent
-import android.content.IntentFilter
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -21,7 +17,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.navigation.fragment.findNavController
 import com.android.volley.RequestQueue
 import com.android.volley.Response
@@ -29,7 +24,6 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.behnamuix.karsaz.R
 import com.bumptech.glide.Glide
-import com.google.android.gms.auth.api.phone.SmsRetriever
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
@@ -37,7 +31,7 @@ import com.google.android.material.textfield.TextInputLayout
 import com.otpview.OTPTextView
 
 
-class LoginFragment : Fragment() {
+class LoginSplashFragment : Fragment() {
     //InitProValue
     private lateinit var bottomSheetDialog: BottomSheetDialog
 
@@ -112,7 +106,7 @@ class LoginFragment : Fragment() {
     //ComponentConfig
     private fun config(v: View) {
         //FirstInit
-        val bottomSheetView = layoutInflater.inflate(R.layout.bottom_sheet_dialog, null)
+        val bottomSheetView = layoutInflater.inflate(R.layout.dialog_bottom_sheet, null)
         bottomSheetDialog = BottomSheetDialog(requireContext(), R.style.BottomSheetDialogTheme)
         // layout باتم شیت خود را اینجا قرار دهید
         otp_view = bottomSheetView.findViewById<OTPTextView>(R.id.otp_view)
