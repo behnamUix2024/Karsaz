@@ -39,4 +39,19 @@
         android:name="com.behnamuix.karsaz.ui.fragments.main.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/searchFragment2"
+        android:name="com.behnamuix.karsaz.ui.fragments.main.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/favoriteFragment2"
+        android:name="com.behnamuix.karsaz.ui.fragments.main.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/settingFragment2"
+        android:name="com.behnamuix.karsaz.ui.fragments.main.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>
