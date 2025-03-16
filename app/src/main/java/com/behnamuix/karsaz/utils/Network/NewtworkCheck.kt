@@ -1,4 +1,4 @@
-package com.behnamuix.karsaz.Utils.Network
+package com.behnamuix.karsaz.utils.Network
 
 import android.content.Context
 import android.net.ConnectivityManager

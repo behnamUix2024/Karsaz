@@ -1,4 +1,4 @@
-package com.behnamuix.karsaz.Dialog
+package com.behnamuix.karsaz.utils.Dialog
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable

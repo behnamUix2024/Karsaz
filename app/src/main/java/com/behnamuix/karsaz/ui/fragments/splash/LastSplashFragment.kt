@@ -88,7 +88,7 @@ class LastSplashFragment : Fragment() {
         Glide.with(requireContext())
             .load(url)
             .centerCrop()
-            .placeholder(R.drawable.round_downloading_24)
+            .placeholder(R.drawable.no_image_load)
             .into(imgEndSplash)
     }
 

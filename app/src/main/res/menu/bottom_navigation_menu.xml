@@ -1,21 +1,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/homeFragment"
         android:icon="@drawable/icon_home"
-        android:title="خانه" />
-    <item
-        android:id="@+id/searchFragment"
-        android:icon="@drawable/icon_search"
-        android:title="جستجو" />
+        android:title="@string/str_bnv_home"
+        android:tooltipText="@string/str_bnv_home"
+         />
+
     <item
         android:id="@+id/favoriteFragment"
         android:icon="@drawable/icon_favorite"
-        android:title="علاقه مندی ها" />
+        android:title="@string/str_bnv_favorites"
+        android:tooltipText="@string/str_bnv_favorites"
+         />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/icon_search"
+        android:title="@string/str_bnv_search"
+        android:tooltipText="@string/str_bnv_search"
+        />
     <item
         android:id="@+id/settingFragment"
         android:icon="@drawable/icon_settings"
-        android:title="تنظیمات" />
+        android:title="@string/str_bnv_settings"
+        android:tooltipText="@string/str_bnv_settings"
+        />
 
 </menu>

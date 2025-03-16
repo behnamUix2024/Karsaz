@@ -27,4 +27,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="str_block_net">کاربر عزیز اینترنت شما متصل نیست لطفا بعد از پیگیری های لازم بر روی دکمه زیر کلیک کنید</string>
     <string name="str_btn_block">تلاش مجدد</string>
+    <string name="str_bnv_home">خانه</string>
+    <string name="str_bnv_favorites">علاقه مندی ها</string>
+    <string name="str_bnv_search">جستجو</string>
+    <string name="str_bnv_settings">تنظیمات</string>
 </resources>

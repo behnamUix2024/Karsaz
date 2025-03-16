@@ -98,7 +98,7 @@ class LoginSplashFragment : Fragment() {
     //LoadSplashLoginImage
     private fun loadLoginImg() {
         log("loadLoginImg()")
-        Glide.with(this).load(URL_IMG).centerCrop().placeholder(R.drawable.round_downloading_24)
+        Glide.with(this).load(URL_IMG).centerCrop().placeholder(R.drawable.no_image_load)
             .into(img_login);
 
     }
