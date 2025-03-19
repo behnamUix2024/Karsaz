@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/color_sec1"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_add_desc"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ذخیره کردن"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/body"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ProgressBar
+                    android:id="@+id/pb_save"
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/white"
+                    android:progressTint="@color/color_sec1"
+                    android:secondaryProgressTint="@color/color_sec1"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_save"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_save"
+                    app:layout_constraintTop_toTopOf="@+id/tv_save" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:foregroundGravity=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView26"
+                app:layout_constraintStart_toStartOf="@+id/editTextText2"
+                app:layout_constraintTop_toBottomOf="@+id/textView26"
+                app:layout_constraintVertical_bias="0.0"
+                app:singleSelection="false">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip123"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="پروژه ها"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:chipBackgroundColor="@color/chip_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip13"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="ایمیل ها"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:chipBackgroundColor="@color/chip_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="خرید ها"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:checkedIconTint="@color/color_sec1"
+                    app:chipBackgroundColor="@color/chip_background"
+                    app:chipIconEnabled="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip16"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="حسابداری"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:checkedIconTint="@color/color_sec1"
+                    app:chipBackgroundColor="@color/chip_background"
+                    app:chipIconEnabled="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip15"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="مسافرت"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:checkedIconTint="@color/color_sec1"
+                    app:chipBackgroundColor="@color/chip_background"
+                    app:chipIconEnabled="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip14"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="ورزش"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:checkedIconTint="@color/color_sec1"
+                    app:chipBackgroundColor="@color/chip_background"
+                    app:chipIconEnabled="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip11"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="امتهانات"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:chipBackgroundColor="@color/chip_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip124"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="قرار ها"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:chipBackgroundColor="@color/chip_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip125"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="مطالعه"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:chipBackgroundColor="@color/chip_background" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:drawableEnd="@drawable/tag"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/color_background_box_stroke_active"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="عنوان هشتگ"
+                android:textColor="#A9000000"
+                android:textSize="@dimen/small1"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1176"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="#"
+                android:textColor="#A9000000"
+                android:textSize="@dimen/h5"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextText2"
+                app:layout_constraintEnd_toStartOf="@+id/editTextText2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextText2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crd_handle"
+                android:layout_width="50dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/color_sec2"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView1176"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/vazir_bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="اضافه کردن وظیفه"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crd_handle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableEnd="@drawable/add"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/color_background_box_stroke_active"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="عنوان وظیفه"
+                android:textColor="#A9000000"
+                android:textSize="@dimen/small1"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintEnd_toEndOf="@+id/textView1176"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1176"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableEnd="@drawable/priority"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/color_background_box_stroke_active"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="الویت بندی"
+                android:textColor="#A9000000"
+                android:textSize="@dimen/small1"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintEnd_toEndOf="@+id/textView1176"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableEnd="@drawable/time"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/color_background_box_stroke_active"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="زمان شروع"
+                android:textColor="#A9000000"
+                android:textSize="@dimen/small1"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableEnd="@drawable/date"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/color_background_box_stroke_active"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="تاریخ"
+                android:textColor="#A9000000"
+                android:textSize="@dimen/small1"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableEnd="@drawable/text"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/color_background_box_stroke_active"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="توضیحات"
+                android:textColor="#A9000000"
+                android:textSize="@dimen/small1"
+                app:layout_constraintEnd_toEndOf="@+id/textView1176"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chipGroup2" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableEnd="@drawable/category"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/color_background_box_stroke_active"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="دسته بندی"
+                android:textColor="#A9000000"
+                android:textSize="@dimen/small1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView1176"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="نادیده گرفتن"
+                android:textColor="#CED95639"
+                android:textSize="@dimen/small1"
+                app:layout_constraintBottom_toBottomOf="@+id/textView1176"
+                app:layout_constraintEnd_toStartOf="@+id/textView11"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView1176"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_et_add"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="karsaz"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_sec2"
+                android:textCursorDrawable="@drawable/curser"
+                android:textSize="@dimen/body"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextText3"
+                app:layout_constraintEnd_toEndOf="@+id/textView17"
+                app:layout_constraintStart_toEndOf="@+id/textView20"
+                app:layout_constraintTop_toTopOf="@+id/editTextText3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_et_add"
+                android:ems="10"
+                android:gravity="right"
+                android:hint="وظیفه اول"
+                android:inputType="text"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_sec2"
+                android:textCursorDrawable="@drawable/curser"
+                android:textSize="@dimen/body"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/et_add_desc"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_et_add"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="توضیحاتی درباره وظیفه مورد نظر!"
+                android:inputType="text|textMultiLine"
+                android:lines="5"
+                android:maxLength="150"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_sec2"
+                android:textCursorDrawable="@drawable/curser"
+                android:textSize="@dimen/body"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintEnd_toEndOf="@+id/textView25"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextText3"
+                app:layout_constraintTop_toBottomOf="@+id/textView23"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="بالا"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:chipBackgroundColor="@color/chip_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="متوسط"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:chipBackgroundColor="@color/chip_background" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checkable="true"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="پایین"
+                    android:textAppearance="@style/CustomChipTextAppearance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/small1"
+                    app:checkedIcon="@drawable/icon_check_circle"
+                    app:chipBackgroundColor="@color/chip_background" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/time"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_et_add"
+                app:layout_constraintBottom_toTopOf="@+id/textView21"
+                app:layout_constraintEnd_toEndOf="@+id/textView14"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/img_set_tme"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:padding="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="17:07"
+                    android:textSize="@dimen/small1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_set_tme"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="255dp"
+                android:text="0"
+                android:textColor="@color/color_error"
+                android:textSize="@dimen/small1"
+                app:layout_constraintBottom_toTopOf="@+id/et_add_desc"
+                app:layout_constraintEnd_toStartOf="@+id/textView25"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_add_desc"
+                app:layout_constraintTop_toBottomOf="@+id/chipGroup2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

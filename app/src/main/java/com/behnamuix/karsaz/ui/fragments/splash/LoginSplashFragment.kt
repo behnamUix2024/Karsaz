@@ -106,7 +106,7 @@ class LoginSplashFragment : Fragment() {
     //ComponentConfig
     private fun config(v: View) {
         //FirstInit
-        val bottomSheetView = layoutInflater.inflate(R.layout.dialog_bottom_sheet, null)
+        val bottomSheetView = layoutInflater.inflate(R.layout.dialog_bottom_sheet_splash, null)
         bottomSheetDialog = BottomSheetDialog(requireContext(), R.style.BottomSheetDialogTheme)
         // layout باتم شیت خود را اینجا قرار دهید
         otp_view = bottomSheetView.findViewById<OTPTextView>(R.id.otp_view)
@@ -115,7 +115,7 @@ class LoginSplashFragment : Fragment() {
         tv_timer = bottomSheetView.findViewById<TextView>(R.id.tv_timer)
         tv_resend = bottomSheetView.findViewById<TextView>(R.id.tv_resend)
         tv_phone = bottomSheetView.findViewById<TextView>(R.id.tv_phone)
-        btn_phone = bottomSheetView.findViewById<MaterialButton>(R.id.btn_phone)
+        btn_phone = bottomSheetView.findViewById<MaterialButton>(R.id.btn_save_db)
         et_phone = bottomSheetView.findViewById<TextInputEditText>(R.id.et_phone)
         btn_ok = bottomSheetView.findViewById<MaterialButton>(R.id.btn_ok)
         tv_number = bottomSheetView.findViewById<TextView>(R.id.tv_number)

@@ -4,28 +4,24 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:icon="@drawable/icon_home"
+        android:icon="@drawable/home"
         android:title="@string/str_bnv_home"
-        android:tooltipText="@string/str_bnv_home"
-         />
+        android:tooltipText="@string/str_bnv_home" />
 
     <item
         android:id="@+id/favoriteFragment"
-        android:icon="@drawable/icon_favorite"
+        android:icon="@drawable/favorite"
         android:title="@string/str_bnv_favorites"
-        android:tooltipText="@string/str_bnv_favorites"
-         />
+        android:tooltipText="@string/str_bnv_favorites" />
     <item
         android:id="@+id/searchFragment"
-        android:icon="@drawable/icon_search"
+        android:icon="@drawable/search"
         android:title="@string/str_bnv_search"
-        android:tooltipText="@string/str_bnv_search"
-        />
+        android:tooltipText="@string/str_bnv_search" />
     <item
         android:id="@+id/settingFragment"
-        android:icon="@drawable/icon_settings"
+        android:icon="@drawable/setting"
         android:title="@string/str_bnv_settings"
-        android:tooltipText="@string/str_bnv_settings"
-        />
+        android:tooltipText="@string/str_bnv_settings" />
 
 </menu>

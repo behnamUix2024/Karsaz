@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/color_sec1"
 
+    app:layoutDescription="@xml/fragment_home_scene2"
     tools:context=".ui.fragments.main.HomeFragment">
 
 
@@ -47,18 +48,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView5"
-                app:layout_constraintEnd_toStartOf="@+id/textView5"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView5"
-                app:layout_constraintVertical_bias="0.45"
-                app:srcCompat="@drawable/menu_icon" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
@@ -135,6 +124,7 @@
         app:layout_constraintVertical_bias="0.13999999">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -206,14 +196,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
             <ImageView
-                android:foreground="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
                 android:id="@+id/btn_add"
-                android:layout_width="150dp"
+                android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
                 android:background="@drawable/bg_add"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_home_date"
                 app:layout_constraintEnd_toStartOf="@+id/textView10"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -225,17 +215,18 @@
                 android:id="@+id/imageView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/baseline_add_24"
+                android:src="@drawable/added"
+                android:tint="@color/color_sec1"
                 app:layout_constraintBottom_toBottomOf="@+id/btn_add"
                 app:layout_constraintEnd_toEndOf="@+id/btn_add"
                 app:layout_constraintStart_toStartOf="@+id/btn_add"
                 app:layout_constraintTop_toTopOf="@+id/btn_add" />
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/notificationImage"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/icon_notif"
+                android:src="@drawable/notif"
                 app:layout_constraintBottom_toTopOf="@+id/btn_add"
                 app:layout_constraintEnd_toStartOf="@+id/textView7"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -270,7 +261,6 @@
         android:layout_marginEnd="16dp"
         android:background="@color/white"
         android:layoutDirection="rtl"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

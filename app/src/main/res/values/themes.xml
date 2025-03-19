@@ -13,5 +13,18 @@
         <item name="android:windowEnterAnimation">@anim/slide_up</item>
         <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:progressTint">@color/color_sec1</item>
+        <item name="android:indeterminateTint">@color/color_sec1</item>
+    </style>
+    <style name="CustomChipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:fontFamily">@font/vazir_fd_wol</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="CustomTimePickerStyle" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="colorSurface">@color/white</item>
+        <item name="colorPrimary">@color/color_acc1</item>
+        <item name="colorOnSurface">#7C383CD5</item>
+    </style>
 
 </resources>
