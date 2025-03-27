@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0.1"
-                android:src="@drawable/round_error_outline_24"
+                android:src="@drawable/error"
                 app:tint="@color/white" />
         </LinearLayout>
 
@@ -82,7 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/btn"
-            android:drawableEnd="@drawable/round_repeat_24"
+            android:drawableEnd="@drawable/repeat"
+            android:drawableTint="@color/white"
             android:gravity="center"
             android:text="@string/str_btn_block"
             android:textColor="@color/white"

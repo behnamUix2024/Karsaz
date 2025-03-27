@@ -23,6 +23,34 @@
             android:layout_height="wrap_content">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_et_add"
+                android:padding="6dp"
+                app:layout_constraintBottom_toTopOf="@+id/chipGroup2"
+                app:layout_constraintEnd_toEndOf="@+id/textView14"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/time"
+                app:layout_constraintTop_toBottomOf="@+id/textView21"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/tv_dte"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="----/--/--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/btn_save"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -94,10 +122,11 @@
                     android:padding="16dp"
                     android:text="پروژه ها"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:chipBackgroundColor="@color/chip_background" />
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip13"
@@ -110,10 +139,11 @@
                     android:padding="16dp"
                     android:text="ایمیل ها"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:chipBackgroundColor="@color/chip_background" />
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip12"
@@ -126,11 +156,11 @@
                     android:padding="16dp"
                     android:text="خرید ها"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:checkedIconTint="@color/color_sec1"
-                    app:chipBackgroundColor="@color/chip_background"
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF"
                     app:chipIconEnabled="true" />
 
                 <com.google.android.material.chip.Chip
@@ -144,11 +174,11 @@
                     android:padding="16dp"
                     android:text="حسابداری"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:checkedIconTint="@color/color_sec1"
-                    app:chipBackgroundColor="@color/chip_background"
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF"
                     app:chipIconEnabled="true" />
 
                 <com.google.android.material.chip.Chip
@@ -162,11 +192,11 @@
                     android:padding="16dp"
                     android:text="مسافرت"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:checkedIconTint="@color/color_sec1"
-                    app:chipBackgroundColor="@color/chip_background"
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF"
                     app:chipIconEnabled="true" />
 
                 <com.google.android.material.chip.Chip
@@ -180,11 +210,11 @@
                     android:padding="16dp"
                     android:text="ورزش"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:checkedIconTint="@color/color_sec1"
-                    app:chipBackgroundColor="@color/chip_background"
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF"
                     app:chipIconEnabled="true" />
 
                 <com.google.android.material.chip.Chip
@@ -198,10 +228,11 @@
                     android:padding="16dp"
                     android:text="امتهانات"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:chipBackgroundColor="@color/chip_background" />
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip124"
@@ -214,10 +245,11 @@
                     android:padding="16dp"
                     android:text="قرار ها"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:chipBackgroundColor="@color/chip_background" />
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip125"
@@ -230,10 +262,11 @@
                     android:padding="16dp"
                     android:text="مطالعه"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:chipBackgroundColor="@color/chip_background" />
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF" />
             </com.google.android.material.chip.ChipGroup>
 
             <TextView
@@ -241,6 +274,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="8dp"
                 android:drawableEnd="@drawable/tag"
                 android:drawablePadding="4dp"
@@ -295,7 +329,7 @@
                 android:fontFamily="@font/vazir_bold"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="اضافه کردن وظیفه"
+                android:text="اضافه کردن وظیفه جدید"
                 android:textColor="@color/black"
                 android:textSize="@dimen/body"
                 app:layout_constraintBottom_toTopOf="@+id/btn_save"
@@ -310,6 +344,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
                 android:drawableEnd="@drawable/add"
                 android:drawablePadding="4dp"
                 android:drawableTint="@color/color_background_box_stroke_active"
@@ -330,6 +365,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
                 android:drawableEnd="@drawable/priority"
                 android:drawablePadding="4dp"
                 android:drawableTint="@color/color_background_box_stroke_active"
@@ -350,12 +386,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
                 android:drawableEnd="@drawable/time"
                 android:drawablePadding="4dp"
                 android:drawableTint="@color/color_background_box_stroke_active"
                 android:gravity="center"
                 android:padding="8dp"
-                android:text="زمان شروع"
+                android:text="زمان"
                 android:textColor="#A9000000"
                 android:textSize="@dimen/small1"
                 app:layout_constraintBottom_toTopOf="@+id/btn_save"
@@ -370,6 +407,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
                 android:drawableEnd="@drawable/date"
                 android:drawablePadding="4dp"
                 android:drawableTint="@color/color_background_box_stroke_active"
@@ -390,6 +428,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
                 android:drawableEnd="@drawable/text"
                 android:drawablePadding="4dp"
                 android:drawableTint="@color/color_background_box_stroke_active"
@@ -408,6 +447,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
                 android:drawableEnd="@drawable/category"
                 android:drawablePadding="4dp"
                 android:drawableTint="@color/color_background_box_stroke_active"
@@ -525,14 +565,17 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:checkable="true"
+                    android:checked="false"
                     android:gravity="center"
                     android:padding="16dp"
                     android:text="بالا"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:chipBackgroundColor="@color/chip_background" />
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconEnabled="true"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip9"
@@ -545,10 +588,11 @@
                     android:padding="16dp"
                     android:text="متوسط"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:chipBackgroundColor="@color/chip_background" />
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip10"
@@ -561,18 +605,20 @@
                     android:padding="16dp"
                     android:text="پایین"
                     android:textAppearance="@style/CustomChipTextAppearance"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
-                    app:checkedIcon="@drawable/icon_check_circle"
-                    app:chipBackgroundColor="@color/chip_background" />
+                    app:checkedIcon="@drawable/checked"
+                    app:checkedIconTint="@color/color_acc1"
+                    app:chipBackgroundColor="#EFEFEF" />
 
             </com.google.android.material.chip.ChipGroup>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/time"
-                android:layout_width="100dp"
+                android:layout_width="150dp"
                 android:layout_height="36dp"
                 android:background="@drawable/bg_et_add"
+                android:padding="6dp"
                 app:layout_constraintBottom_toTopOf="@+id/textView21"
                 app:layout_constraintEnd_toEndOf="@+id/textView14"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -580,27 +626,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView14"
                 app:layout_constraintVertical_bias="0.0">
 
-                <ImageView
-                    android:id="@+id/img_set_tme"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:padding="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_time"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/clock" />
-
                 <TextView
                     android:id="@+id/tv_time"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:gravity="center"
-                    android:text="17:07"
+                    android:text="--"
+                    android:textColor="@color/black"
                     android:textSize="@dimen/small1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/img_set_tme"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>

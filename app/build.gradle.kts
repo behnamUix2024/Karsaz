@@ -80,6 +80,8 @@ dependencies {
     implementation(libs.otp.view)
     implementation (libs.switch.button)
     implementation(libs.library)
+    implementation (libs.persian.date.picker.dialog)
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
 
 
 

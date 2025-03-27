@@ -1,18 +1,18 @@
 package com.behnamuix.karsaz.ui.fragments.main
 
+import android.R.attr.typeface
 import android.animation.ArgbEvaluator
 import android.animation.ValueAnimator
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ProgressBar
@@ -21,24 +21,29 @@ import android.widget.Toast
 import androidx.appcompat.widget.SwitchCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.behnamuix.karsaz.ui.adapter.ViewPagerAdapter
 import com.behnamuix.karsaz.R
 import com.behnamuix.karsaz.databinding.FragmentHomeBinding
+import com.behnamuix.karsaz.ui.adapter.ViewPagerAdapter
 import com.behnamuix.karsaz.ui.fragments.tasks.AllTasksFragment
 import com.behnamuix.karsaz.ui.fragments.tasks.DoneTasksFragment
 import com.behnamuix.karsaz.ui.fragments.tasks.NdoneTasksFragment
-import com.dd.CircularProgressButton
+import com.bumptech.glide.Glide
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.google.android.material.button.MaterialButton
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
+import ir.hamsaa.persiandatepicker.PersianDatePickerDialog
+import ir.hamsaa.persiandatepicker.api.PersianPickerDate
+import ir.hamsaa.persiandatepicker.api.PersianPickerListener
+import ir.hamsaa.persiandatepicker.util.PersianCalendarUtils
+
 
 class HomeFragment : Fragment() {
     //_binding is a nullable reference to the binding class
@@ -47,12 +52,14 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
 
     //initVariable
+    private var url = "http://behnamuix2024.com/img/karsaz/home/bg_ads.png"
     private lateinit var btn_add: ImageView
     private lateinit var customSwitch: SwitchCompat
     private lateinit var img_light: ImageView
     private lateinit var tv_home_date: TextView
     private lateinit var tv_save: TextView
     private lateinit var tv_time: TextView
+    private lateinit var tv_date: TextView
     private lateinit var img_dark: ImageView
     private lateinit var tablayout: TabLayout
     private lateinit var viewpager: ViewPager2
@@ -61,9 +68,10 @@ class HomeFragment : Fragment() {
     private lateinit var bsdAddHomeFragView: View
     private lateinit var btn_save: ConstraintLayout
     private lateinit var pb_save: ProgressBar
-    private lateinit var img_set_time: ImageView
-    private lateinit var et_add_desc:EditText
-    private lateinit var tv_count:TextView
+
+    private lateinit var et_add_desc: EditText
+    private lateinit var tv_count: TextView
+    private lateinit var picker: PersianDatePickerDialog
 
 
     val duration: Long = 500
@@ -80,14 +88,15 @@ class HomeFragment : Fragment() {
     private fun main() {
         config()
         getDate()
+
     }
 
     private fun config() {
-
         bsdAddHomeFragView = layoutInflater.inflate(R.layout.dialog_bottom_sheet_home_add, null)
         bsdAddHomeFrag = BottomSheetDialog(requireContext(), R.style.BottomSheetDialogTheme)
         queue = Volley.newRequestQueue(requireContext())
         tv_home_date = binding.tvHomeDate
+
         customSwitch = binding.customSwitch
         img_light = binding.imgLight
         img_dark = binding.imgDark
@@ -108,12 +117,14 @@ class HomeFragment : Fragment() {
         log("showAddButtomSheetDialog()")
         Handler(Looper.getMainLooper()).postDelayed({
             bsdAddHomeFrag.setContentView(bsdAddHomeFragView)
-            img_set_time=bsdAddHomeFragView.findViewById(R.id.img_set_tme)
+
             pb_save = bsdAddHomeFragView.findViewById(R.id.pb_save)
             tv_save = bsdAddHomeFragView.findViewById(R.id.tv_save)
-            tv_time=bsdAddHomeFragView.findViewById(R.id.tv_time)
-            et_add_desc=bsdAddHomeFragView.findViewById(R.id.et_add_desc)
-            tv_count=bsdAddHomeFragView.findViewById(R.id.tv_count)
+            tv_time = bsdAddHomeFragView.findViewById(R.id.tv_time)
+            et_add_desc = bsdAddHomeFragView.findViewById(R.id.et_add_desc)
+            tv_count = bsdAddHomeFragView.findViewById(R.id.tv_count)
+
+            tv_date = bsdAddHomeFragView.findViewById(R.id.tv_dte)
             btn_save = bsdAddHomeFragView.findViewById<ConstraintLayout>(R.id.btn_save)
             btn_save.setOnClickListener() {
                 tv_save.text = "تایید"
@@ -128,15 +139,18 @@ class HomeFragment : Fragment() {
                 }, 5000)
 
             }
-            img_set_time.setOnClickListener(){
+            tv_time.setOnClickListener() {
                 loadTimePickerDialog()
             }
-            et_add_desc.addTextChangedListener(object:TextWatcher{
+            tv_date.setOnClickListener() {
+                loadDatePickerDialog()
+            }
+            et_add_desc.addTextChangedListener(object : TextWatcher {
                 override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
 
                 override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                    val wordCount=countWord(p0.toString())
-                    tv_count.text="تعداد حروف:$wordCount"
+                    val wordCount = countWord(p0.toString())
+                    tv_count.text = "تعداد حروف:$wordCount"
                 }
 
                 override fun afterTextChanged(p0: Editable?) {}
@@ -150,8 +164,37 @@ class HomeFragment : Fragment() {
         }, t)
     }
 
+    private fun loadDatePickerDialog() {
+        picker = PersianDatePickerDialog(context)
+            .setPositiveButtonString("ثبت")
+            .setNegativeButton("چشم پوشی")
+            .setTodayButton("امروز")
+            .setTodayButtonVisible(true)
+            .setMinYear(1300)
+            .setMaxYear(PersianDatePickerDialog.THIS_YEAR)
+            .setMaxMonth(PersianDatePickerDialog.THIS_MONTH)
+            .setMaxDay(PersianDatePickerDialog.THIS_DAY)
+            .setInitDate(1370, 3, 13)
+            .setActionTextColor(resources.getColor(R.color.color_acc2))
+            .setTitleType(PersianDatePickerDialog.WEEKDAY_DAY_MONTH_YEAR)
+            .setShowInBottomSheet(false)
+            .setListener(object : PersianPickerListener {
+                override fun onDateSelected(persianPickerDate: PersianPickerDate) {
+                    var y = persianPickerDate.persianYear.toString()
+                    var m = persianPickerDate.persianMonth.toString()
+                    var d = persianPickerDate.persianDay.toString()
+                    tv_date.text = "$y/$m/$d"
+                }
+
+                override fun onDismissed() {
+                }
+            })
+
+        picker.show()
+    }
+
     private fun countWord(text: String): Int {
-        if(text.isEmpty()){
+        if (text.isEmpty()) {
             return 0
         }
 

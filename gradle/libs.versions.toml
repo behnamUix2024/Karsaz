@@ -26,6 +26,7 @@ otpView = "1.1"
 persiandatepicker = "1.1.4"
 persianDatePickerDialog = "1.8.0"
 persianMaterialDatepicker = "1.0.1"
+persianMaterialDatetimepicker = "1.3"
 picasso = "2.8"
 animate="1.0.1"
 playServicesAuthApiPhone = "19.2.0"
@@ -63,6 +64,7 @@ multisearchview = { module = "com.github.iammert:MultiSearchView", version.ref =
 otp-view = { module = "com.github.appsfeature:otp-view", version.ref = "otpView" }
 persian-date-picker-dialog = { module = "com.github.aliab:Persian-Date-Picker-Dialog", version.ref = "persianDatePickerDialog" }
 persian-material-datepicker = { module = "com.github.M-Erfan-Dm:persian-material-datepicker", version.ref = "persianMaterialDatepicker" }
+persian-material-datetimepicker = { module = "com.github.aliabouzar:Persian-Material-DateTimePicker", version.ref = "persianMaterialDatetimepicker" }
 persiandatepicker = { module = "com.github.javaherisaber:PersianDatePicker", version.ref = "persiandatepicker" }
 picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
 animate = { module = "com.github.gayanvoice:android-animations-kotlin", version.ref = "animate" }
