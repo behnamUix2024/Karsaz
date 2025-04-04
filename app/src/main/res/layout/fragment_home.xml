@@ -11,6 +11,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:id="@+id/customToolbar"
         android:layout_width="match_parent"
         android:layout_height="180dp"
@@ -114,7 +115,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/color_sec1"
+        android:background="@drawable/bg_list_iem"
+        app:cardBackgroundColor="#FFFFFF"
         app:cardCornerRadius="8dp"
         app:cardElevation="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -126,7 +128,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_list_iem">
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -148,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:text="بهنام"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="@dimen/body"
                 app:layout_constraintEnd_toStartOf="@+id/imageView6"
                 app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -158,7 +161,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="خوش آمدید"
-                android:textColor="@color/color_sec2"
+                android:textColor="#90FFFFFF"
                 android:textSize="@dimen/small2"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                 app:layout_constraintEnd_toEndOf="@+id/textView7"
@@ -172,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="وظیفه شما"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="@dimen/body"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/imageView6"
@@ -187,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:text="..."
-                android:textColor="@color/color_sec2"
+                android:textColor="#FFFFFF"
                 android:textSize="@dimen/small1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/textView10"
@@ -227,6 +230,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/notif"
+                android:tint="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/btn_add"
                 app:layout_constraintEnd_toStartOf="@+id/textView7"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -260,9 +264,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
         android:background="@color/white"
-        android:layoutDirection="rtl"
+        android:layoutDirection="ltr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

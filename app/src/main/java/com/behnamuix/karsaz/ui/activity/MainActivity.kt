@@ -24,6 +24,7 @@ import com.behnamuix.karsaz.ui.fragments.main.FavoriteFragment
 import com.behnamuix.karsaz.ui.fragments.main.HomeFragment
 import com.behnamuix.karsaz.ui.fragments.main.SearchFragment
 import com.behnamuix.karsaz.ui.fragments.main.SettingFragment
+import com.behnamuix.karsaz.ui.fragments.main.SliderFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 

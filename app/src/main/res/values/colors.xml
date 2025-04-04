@@ -20,6 +20,9 @@
     <color name="color_block">#4399E2</color>
     <color name="color_bg_main">#EEEEEE</color>
 
+    <color name="color_bg_list_item_start">#4B79A1</color>
+    <color name="color_bg_list_item_end">#D95639</color>
+
 
     <color name="color_background_box">@color/color_background_box_stroke</color>
     <color name="color_background_box_stroke">#DEDEDE</color>

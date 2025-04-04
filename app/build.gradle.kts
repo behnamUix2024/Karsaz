@@ -1,5 +1,5 @@
 plugins {
-
+    kotlin("kapt") // اعمال پلاگین kapt
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
@@ -59,6 +59,7 @@ android {
 
 
 dependencies {
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.appcompat)
@@ -81,7 +82,17 @@ dependencies {
     implementation (libs.switch.button)
     implementation(libs.library)
     implementation (libs.persian.date.picker.dialog)
-    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation(libs.androidx.viewpager2)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("androidx.room:room-ktx:2.6.1")
+    implementation ("androidx.room:room-runtime:2.6.1")
+    implementation ("androidx.room:room-rxjava3:2.6.1")
+    kapt ("androidx.room:room-compiler:2.6.1")
+
+    //RXJava
+    implementation ("io.reactivex.rxjava3:rxandroid:3.0.2")
+
 
 
 

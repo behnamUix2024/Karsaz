@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5">
+
+            <TextView
+                android:id="@+id/tv_tag_task_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_icon_list_item"
+                android:backgroundTint="@color/color_prim1"
+                android:elevation="8dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="2dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="2dp"
+                android:text="#اندروید"
+                android:textColor="@color/white"
+                android:textSize="@dimen/small2"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/line_slider_gide"
+                app:layout_constraintEnd_toEndOf="@+id/tv_desc_task_card"
+                app:layout_constraintTop_toTopOf="@+id/line_slider_gide"
+                app:layout_constraintVertical_bias="0.82" />
+
+            <LinearLayout
+                android:id="@+id/line_parity"
+                android:layout_width="170dp"
+                android:layout_height="16dp"
+                android:background="@drawable/bg_parity_high"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/tv_date_task_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="دوشنبه11 فروردین ماه "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small2" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_time_task_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23:44"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title_task_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:text="عنوان وظیفه"
+                android:textColor="@color/black"
+                android:textSize="@dimen/body"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_parity"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_icon_list_item"
+                android:backgroundTint="#F5F5F5"
+                android:elevation="8dp"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_trash"
+                app:layout_constraintEnd_toStartOf="@+id/tv_desc_task_card"
+                app:layout_constraintHorizontal_bias="0.43"
+                app:layout_constraintStart_toEndOf="@+id/img_edit"
+                app:layout_constraintTop_toTopOf="@+id/tv_title_task_card"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/tv_cat_task_cards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="دسته بندی:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small2"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="...."
+                        android:textColor="#9D000000"
+                        android:textSize="@dimen/small2" />
+
+                    <TextView
+                        android:id="@+id/tv_cat_task_card"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="...."
+                        android:textColor="#9D000000"
+                        android:textSize="@dimen/small2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_desc_task_card"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از  "
+                android:textColor="#D4000000"
+                android:textSize="@dimen/small1"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_title_task_card"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_task_card"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_icon_list_item"
+                android:backgroundTint="#F5F5F5"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/line_parity"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_title_task_card"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <ImageView
+                android:id="@+id/img_trash"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_icon_list_item"
+                android:backgroundTint="#F5F5F5"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/img_edit"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img_edit"
+                app:layout_constraintTop_toBottomOf="@+id/img_edit"
+                app:layout_constraintVertical_bias="0.19"
+                app:srcCompat="@drawable/ic_trash" />
+
+            <ImageView
+                android:id="@+id/img_trash2"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_icon_list_item"
+                android:backgroundTint="#F5F5F5"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_tag_task_card"
+                app:layout_constraintEnd_toEndOf="@+id/img_trash"
+                app:layout_constraintStart_toStartOf="@+id/img_trash"
+                app:layout_constraintTop_toTopOf="@+id/line_slider_gide"
+                app:layout_constraintVertical_bias="0.86"
+                app:srcCompat="@drawable/ic_heart" />
+
+            <LinearLayout
+                android:id="@+id/line_slider_gide"
+                android:layout_width="247dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_slider_task_item_list"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_tag_task_card"
+                app:layout_constraintStart_toEndOf="@+id/img_trash"
+                app:layout_constraintTop_toBottomOf="@+id/line_parity"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/img_slider_handle"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="2dp"
+                    app:srcCompat="@drawable/handle" />
+
+                <ImageView
+                    android:id="@+id/img_slider_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:tint="#D0FFFFFF"
+                    app:srcCompat="@drawable/_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_slider_gide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    android:text="برای تکمیل شدن وظیفه بکشید"
+                    android:textColor="#D0FFFFFF"
+                    android:textSize="9sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

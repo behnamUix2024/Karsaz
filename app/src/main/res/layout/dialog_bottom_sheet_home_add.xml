@@ -28,7 +28,7 @@
                 android:layout_height="36dp"
                 android:background="@drawable/bg_et_add"
                 android:padding="6dp"
-                app:layout_constraintBottom_toTopOf="@+id/chipGroup2"
+                app:layout_constraintBottom_toTopOf="@+id/chipgp_dbs_add_category"
                 app:layout_constraintEnd_toEndOf="@+id/textView14"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/time"
@@ -51,7 +51,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/btn_save"
+                android:id="@+id/btn_dbs_add_save"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="16dp"
@@ -63,7 +63,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_add_desc"
+                app:layout_constraintTop_toBottomOf="@+id/et_dbs_add_desc"
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
@@ -100,13 +100,13 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chipGroup2"
+                android:id="@+id/chipgp_dbs_add_category"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:foregroundGravity=""
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/textView26"
-                app:layout_constraintStart_toStartOf="@+id/editTextText2"
+                app:layout_constraintStart_toStartOf="@+id/et_dbs_add_tag"
                 app:layout_constraintTop_toBottomOf="@+id/textView26"
                 app:layout_constraintVertical_bias="0.0"
                 app:singleSelection="false">
@@ -284,7 +284,7 @@
                 android:text="عنوان هشتگ"
                 android:textColor="#A9000000"
                 android:textSize="@dimen/small1"
-                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintBottom_toTopOf="@+id/btn_dbs_add_save"
                 app:layout_constraintEnd_toStartOf="@+id/textView11"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView1176"
@@ -300,10 +300,10 @@
                 android:text="#"
                 android:textColor="#A9000000"
                 android:textSize="@dimen/h5"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextText2"
-                app:layout_constraintEnd_toStartOf="@+id/editTextText2"
+                app:layout_constraintBottom_toBottomOf="@+id/et_dbs_add_tag"
+                app:layout_constraintEnd_toStartOf="@+id/et_dbs_add_tag"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/editTextText2"
+                app:layout_constraintTop_toTopOf="@+id/et_dbs_add_tag"
                 app:layout_constraintVertical_bias="0.0" />
 
             <androidx.cardview.widget.CardView
@@ -332,7 +332,7 @@
                 android:text="اضافه کردن وظیفه جدید"
                 android:textColor="@color/black"
                 android:textSize="@dimen/body"
-                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintBottom_toTopOf="@+id/btn_dbs_add_save"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -353,7 +353,7 @@
                 android:text="عنوان وظیفه"
                 android:textColor="#A9000000"
                 android:textSize="@dimen/small1"
-                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintBottom_toTopOf="@+id/btn_dbs_add_save"
                 app:layout_constraintEnd_toEndOf="@+id/textView1176"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -374,11 +374,11 @@
                 android:text="الویت بندی"
                 android:textColor="#A9000000"
                 android:textSize="@dimen/small1"
-                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintBottom_toTopOf="@+id/btn_dbs_add_save"
                 app:layout_constraintEnd_toEndOf="@+id/textView1176"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+                app:layout_constraintTop_toBottomOf="@+id/et_dbs_add_title"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
@@ -395,11 +395,11 @@
                 android:text="زمان"
                 android:textColor="#A9000000"
                 android:textSize="@dimen/small1"
-                app:layout_constraintBottom_toTopOf="@+id/btn_save"
-                app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+                app:layout_constraintBottom_toTopOf="@+id/btn_dbs_add_save"
+                app:layout_constraintEnd_toEndOf="@+id/et_dbs_add_tag"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+                app:layout_constraintTop_toBottomOf="@+id/et_dbs_add_title"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
@@ -416,11 +416,11 @@
                 android:text="تاریخ"
                 android:textColor="#A9000000"
                 android:textSize="@dimen/small1"
-                app:layout_constraintBottom_toTopOf="@+id/btn_save"
-                app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+                app:layout_constraintBottom_toTopOf="@+id/btn_dbs_add_save"
+                app:layout_constraintEnd_toEndOf="@+id/et_dbs_add_tag"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+                app:layout_constraintTop_toBottomOf="@+id/et_dbs_add_title"
                 app:layout_constraintVertical_bias="0.19" />
 
             <TextView
@@ -440,7 +440,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/textView1176"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/chipGroup2" />
+                app:layout_constraintTop_toBottomOf="@+id/chipgp_dbs_add_category" />
 
             <TextView
                 android:id="@+id/textView26"
@@ -460,7 +460,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/textView1176"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+                app:layout_constraintTop_toBottomOf="@+id/chipgp_dbs_add_prority"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
@@ -481,7 +481,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/et_dbs_add_tag"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_et_add"
@@ -495,14 +495,14 @@
                 android:textColorHint="@color/color_sec2"
                 android:textCursorDrawable="@drawable/curser"
                 android:textSize="@dimen/body"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextText3"
+                app:layout_constraintBottom_toBottomOf="@+id/et_dbs_add_title"
                 app:layout_constraintEnd_toEndOf="@+id/textView17"
                 app:layout_constraintStart_toEndOf="@+id/textView20"
-                app:layout_constraintTop_toTopOf="@+id/editTextText3"
+                app:layout_constraintTop_toTopOf="@+id/et_dbs_add_title"
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
-                android:id="@+id/editTextText3"
+                android:id="@+id/et_dbs_add_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -526,7 +526,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
-                android:id="@+id/et_add_desc"
+                android:id="@+id/et_dbs_add_desc"
                 android:layout_width="0dp"
                 android:layout_height="120dp"
                 android:layout_marginBottom="8dp"
@@ -542,19 +542,19 @@
                 android:textColorHint="@color/color_sec2"
                 android:textCursorDrawable="@drawable/curser"
                 android:textSize="@dimen/body"
-                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintBottom_toTopOf="@+id/btn_dbs_add_save"
                 app:layout_constraintEnd_toEndOf="@+id/textView25"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/textView20"
                 app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
             <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chipGroup"
+                android:id="@+id/chipgp_dbs_add_prority"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="@+id/textView23"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextText3"
+                app:layout_constraintStart_toStartOf="@+id/et_dbs_add_title"
                 app:layout_constraintTop_toBottomOf="@+id/textView23"
                 app:singleSelection="true">
 
@@ -650,11 +650,11 @@
                 android:text="0"
                 android:textColor="@color/color_error"
                 android:textSize="@dimen/small1"
-                app:layout_constraintBottom_toTopOf="@+id/et_add_desc"
+                app:layout_constraintBottom_toTopOf="@+id/et_dbs_add_desc"
                 app:layout_constraintEnd_toStartOf="@+id/textView25"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/et_add_desc"
-                app:layout_constraintTop_toBottomOf="@+id/chipGroup2" />
+                app:layout_constraintStart_toStartOf="@+id/et_dbs_add_desc"
+                app:layout_constraintTop_toBottomOf="@+id/chipgp_dbs_add_category" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
